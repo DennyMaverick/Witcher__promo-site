@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Witcher | Ведьмак | 2 сезон 17 декабря</title>
   <link rel="stylesheet" href="./css/style.css">
-  <script src="./script.js" defer></script>
+  <script src="./js/script.js" type="module"></script>
   
 </head>
-<body>
+<body class="page">
   <header class="header">
     <div class="container header__container">
       <img class="header__logo" src="./images/logo.svg" alt="Logo сериала The Witcher">
@@ -30,16 +30,18 @@
           </li>
           <li class="navigation__item">
             <a class="navigation__link navigation__link-kinopoisk" href="#">
-
             </a>
           </li>
         </ul>
+        <button class="burger navigation__btn">
+          <span class="burger__line"></span>
+        </button>
       </nav>
     </div>
   </header>
   
   <section class="present">
-    <div class="container">
+    <div class="container present__container">
       <div class="present__hero">
         <h1 class="present__title">
           Ведьмак
@@ -72,8 +74,8 @@
         </ul>
 
         <ul class="tabs__list">
-          <li class="tabs__item tabs__item--active">
-            <ul class="tabs__content">
+          <li class="tabs__item">
+            <ul class="tabs__content tabs__content--video">
               <li class="card card-video">
                 <a class="card__link" href="https://youtu.be/aTPPmHqMZOw">
                   <figure>
@@ -108,7 +110,7 @@
           </li>
 
           <li class="tabs__item">
-            <ul class="tabs__content">
+            <ul class="tabs__content tabs__content--photo">
               <li class="card card-img">
                 <img class="card__photo-img" src="./images/cirilla.jpg" alt="">
               </li>
@@ -123,11 +125,11 @@
               </li>
             </ul>
           </li>
-          <li class="tabs__item">
-            <ul class="tabs__content">
+          <li class="tabs__item tabs__item--active">
+            <ul class="tabs__content tabs__content--product">
               <li class="card card-product">
                 <article class="product">
-                  <img src="./images/pendant.jpg" alt="">
+                  <img class="card__product-img" src="./images/pendant.jpg" alt="">
                   <h2>Медальон Школы Волка</h2>
                   <div class="product__wrapper-buy">
                     <p class="product__price">
@@ -143,7 +145,7 @@
               </li>
               <li class="card card-product">
                 <article class="product">
-                  <img src="./images/mask.jpg" alt="">
+                  <img class="card__product-img" src="./images/mask.jpg" alt="">
                   <h2>Маска защитная</h2>
                   <div class="product__wrapper-buy">
                     <p class="product__price">
@@ -159,7 +161,7 @@
               </li>
               <li class="card card-product">
                 <article class="product">
-                  <img src="./images/pendent.jpg" alt="">
+                  <img class="card__product-img" src="./images/pendent.jpg" alt="">
                   <h2>Кулон Волк</h2>
                   <div class="product__wrapper-buy">
                     <p class="product__price">
