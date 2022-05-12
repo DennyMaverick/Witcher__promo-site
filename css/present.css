@@ -3,6 +3,10 @@
   color: #FFFFFF;
 }
 
+.present__tabs {
+  min-height: 400px;
+}
+
 .present__title {
   font-family: 'IBM Plex Mono';
   font-weight: 500;

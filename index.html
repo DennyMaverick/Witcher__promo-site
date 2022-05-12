@@ -7,7 +7,7 @@
   <title>The Witcher | Ведьмак | 2 сезон 17 декабря</title>
   <link rel="stylesheet" href="./css/style.css">
   <script src="./js/script.js" type="module"></script>
-  
+
 </head>
 <body class="page">
   <header class="header">
@@ -39,7 +39,7 @@
       </nav>
     </div>
   </header>
-  
+
   <section class="present">
     <div class="container present__container">
       <div class="present__hero">
@@ -57,24 +57,24 @@
       <div class="present__tabs tabs">
         <ul class="tabs__control">
           <li class="tabs__btn-wrapper">
-            <button class="tabs__btn tabs__btn--active">
+            <button data-type="video" class="tabs__btn tabs__btn--active">
               Видео
-            </button>            
+            </button>
           </li>
           <li class="tabs__btn-wrapper">
-            <button class="tabs__btn">
+            <button data-type="photo" class="tabs__btn">
               Фото
-            </button>   
+            </button>
           </li>
           <li class="tabs__btn-wrapper">
-            <button class="tabs__btn">
+            <button data-type="products" class="tabs__btn">
               Мерч
             </button>
           </li>
         </ul>
 
         <ul class="tabs__list">
-          <li class="tabs__item">
+          <li id="video" class="tabs__item">
             <ul class="tabs__content tabs__content--video">
               <li class="card card-video">
                 <a class="card__link" href="https://youtu.be/aTPPmHqMZOw">
@@ -84,7 +84,7 @@
                       Русский трейлер #1
                     </figcaption>
                   </figure>
-                </a>  
+                </a>
               </li>
               <li class="card card-video">
                 <a class="card__link" href="https://youtu.be/PQ59CmCyOk4">
@@ -94,7 +94,7 @@
                       Русский трейлер #2
                     </figcaption>
                   </figure>
-                </a> 
+                </a>
               </li>
               <li class="card card-video">
                 <a class="card__link" href="https://youtu.be/Si65KjkMy8s">
@@ -103,13 +103,13 @@
                     <figcaption>
                       Тизер на русском
                     </figcaption>
-                  </figure> 
-                </a>                 
+                  </figure>
+                </a>
               </li>
             </ul>
           </li>
 
-          <li class="tabs__item">
+          <li id="photo" class="tabs__item">
             <ul class="tabs__content tabs__content--photo">
               <li class="card card-img">
                 <img class="card__photo-img" src="./images/cirilla.jpg" alt="">
@@ -118,14 +118,14 @@
                 <img class="card__photo-img" src="./images/geralt.jpg" alt="">
               </li>
               <li class="card card-img">
-                <img class="card__photo-img" src="./images/versus.jpg" alt="">   
+                <img class="card__photo-img" src="./images/versus.jpg" alt="">
               </li>
               <li class="card card-img">
-                <img class="card__photo-img" src="./images/kadrs2.jpg" alt="">   
+                <img class="card__photo-img" src="./images/kadrs2.jpg" alt="">
               </li>
             </ul>
           </li>
-          <li class="tabs__item tabs__item--active">
+          <li id="products" class="tabs__item tabs__item--active">
             <ul class="tabs__content tabs__content--product">
               <li class="card card-product">
                 <article class="product">
@@ -186,7 +186,7 @@
   <svg hidden >
     <symbol id="add" fill="currentColor">
         <path d="M11 9H13V6H16V4H13V1H11V4H8V6H11V9ZM7 18C5.9 18 5.01 18.9 5.01 20C5.01 21.1 5.9 22 7 22C8.1 22 9 21.1 9 20C9 18.9 8.1 18 7 18ZM17 18C15.9 18 15.01 18.9 15.01 20C15.01 21.1 15.9 22 17 22C18.1 22 19 21.1 19 20C19 18.9 18.1 18 17 18ZM7.17 14.75L7.2 14.63L8.1 13H15.55C16.3 13 16.96 12.59 17.3 11.97L21.16 4.96L19.42 4H19.41L18.31 6L15.55 11H8.53L8.4 10.73L6.16 6L5.21 4L4.27 2H1V4H3L6.6 11.59L5.25 14.04C5.09 14.32 5 14.65 5 15C5 16.1 5.9 17 7 17H19V15H7.42C7.29 15 7.17 14.89 7.17 14.75Z"/>
-      </symbol> 
+      </symbol>
     </svg>
 </body>
 </html>
